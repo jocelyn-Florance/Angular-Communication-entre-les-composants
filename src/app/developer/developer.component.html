@@ -1,0 +1,16 @@
+<div class="container">
+
+    <h1>Input</h1>
+
+    <div class="card p-4">
+        <h2>Lastname : <small>{{ developer.lastName }}</small></h2>
+        <h2>First name : <small>{{ developer.firtsName }}</small></h2>
+        <h2>Age : <small>{{ developer.age }}</small></h2>
+        <h2>Sexe : <small>{{ developer.sexe }}</small></h2>
+        <h2>Bio : <small>{{ developer.bio }}</small></h2>
+    </div>
+
+    <h2 class="mt-4">Skills component:</h2>
+    <app-skill *ngFor="let skill of developer.skills" [skill]="skill"></app-skill>
+
+</div>
